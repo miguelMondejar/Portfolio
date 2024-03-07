@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles-day.css" id="stylesheet">
+    <title>Portfolio Miguel</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-night bg-night">
+        <div class="container-fluid d-flex justify-content-center align-items-center text-center">
+            <a id="text-me" class="nav-link active" href="#aboutMe">SOBRE MÍ</a> 
+            <a id="text-study" class="nav-link active" href="#education">EDUCACIÓN</a>
+            <a id="text-experience" class="nav-link active" href="#experience">EXPERIENCIA</a>
+            <a id="text-contact" class="nav-link active" href="#contact">CONTACTO</a>
+            <button id="toggleModeButton" class="nav-button" onclick="toggleMode()">🌙</button>
+            <button id="toggleLangButton" class="nav-button" onclick="toggleLang()">EN</button>
+        </div>
+    </nav>
+    
+    <!-- Content -->
+    <div class="container">
+        <div class="centered">
+            <div class="text-container">
+                <p id="text-saludo">¡Hola!</p>
+                <p id="text-name">Me llamo Miguel Mondéjar</p>
+                <p id="text-developer">Soy Desarrollador de Software</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/img/miguel_index.jpg" alt="Mi Foto">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre mí -->
+    <div class="container" id="aboutMe">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="lead" id="about-me-paragraph1">
+                    Desde pequeño me apasiona el mundo de la informática, me encanta el desarrollo web y 
+                    la programación. Poseo habilidades tanto en Frontend como en Backend, mi aspiranción es
+                    convertirme en Desarrollador Full Stack en el futuro.</p>
+                <p class="lead" id="about-me-paragraph2">
+                    Me describo como una persona creativa, responsable y con una actitud positiva. Tengo la
+                    capacidad de adaptarme a diversas situaciones, resolver problemas y aprecio el trabajo en 
+                    equipo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Educación -->
+    <div class="container" id="education">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-5" id="text-education-">EDUCACIÓN</h1>
+                <p>*EN CONSTRUCCIÓN*</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experiencia -->
+    <div class="container" id="experience">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-5" id="text-experience-">EXPERIENCIA</h1>
+                <p>*EN CONSTRUCCIÓN*</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-5" id="text-contact-">CONTACTO</h1>
+                <p class="lead" id="contact-paragraph1">¿Te has quedado con ganas de más? ¿Quieres consultarme algo? 🤔</p>
+                <p class="lead" id="contact-paragraph2">Puedes contactar conmigo por correo electrónico ✉➡ miguebyte01@gmail.com</p>
+                <p class="lead" id="contact-paragraph3">También puedes contactar conmigo por mis RRSS, enlances abajo en el footer ;)</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-light text-center py-3">
+        <div class="container">
+            <p class="lead">
+                <a href="https://www.linkedin.com/in/miguelmondejarweb" target="_blank" class="text-light">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/miguel.mg4" target="_blank" class="text-light">
+                    <i class="fab fa-instagram"></i></a>
+            </p>
+            <p id="copyright" class="lead">Miguel Mondéjar González</p>
+        </div>
+    </footer>
+</body>
+</html>

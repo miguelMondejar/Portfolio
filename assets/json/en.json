@@ -1,0 +1,14 @@
+{
+    "greeting": "Hi!",
+    "name": "My name is Miguel Mondéjar",
+    "developer": "I'm a Software Developer",
+    "me": "ABOUT ME",
+    "study": "EDUCATION",
+    "experience": "EXPERIENCE",
+    "contact": "CONTACT",
+    "aboutMeParagraph1": "Since I was a child, I've been passionate about the world of computer science, enjoying web development and programming. I have skills in both Frontend and Backend, and my aspiration is to become a Full Stack Developer in the future.",
+    "aboutMeParagraph2": "I describe myself as a creative, responsible person with a positive attitude. I have the ability to adapt to various situations, solve problems, and value teamwork.",
+    "contactParagraph1": "Do you want more information? Do you have any questions for me? 🤔",
+    "contactParagraph2": "You can reach out to me via email ✉➡ miguebyte01@gmail.com",
+    "contactParagraph3": "You can also connect with me through my social media channels, links are below in the footer ;)"
+}
