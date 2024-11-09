@@ -6,6 +6,17 @@
     --color-danger: rgb(209, 55, 55);
     --color-footer-bg: rgb(0, 0, 0);
     --color-footer-text: rgb(255, 255, 255);
+    --color-bg-card:rgb(255, 255, 255);
+}
+
+/* Variables para el modo oscuro */
+body.dark-mode {
+    --color-bg: rgb(26, 26, 26);
+    --color-text: rgb(235, 235, 235);
+    --color-accent: rgb(42, 83, 245);
+    --color-footer-bg: rgb(20, 20, 20);
+    --color-footer-text: rgb(200, 200, 200);
+    --color-bg-card:rgb(0, 0, 0);
 }
 
 body {
@@ -49,10 +60,19 @@ h1 {
     color: var(--color-text);
 }
 
+.text-container p, .section {
+    color: var(--color-text);
+}
+
 .image-container img {
     max-width: 50%;
     height: auto;
     border-radius: 50%;
+}
+
+.container, .card, .footer {
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .nav-button {
@@ -118,6 +138,10 @@ p.lead {
     margin-bottom: 15px;
 }
 
+.card-body {
+    background-color: var(--color-bg-card);
+}
+
 .experience-item h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -138,19 +162,24 @@ p.lead {
     margin-bottom: 5px;
 }
 
-/* Estilos para el footer */
 footer {
-    background-color: var(--color-footer-bg);
-    color: var(--color-footer-text);
+    background-color: #000000; 
+    color: #ffffff;
     padding: 20px;
     text-align: center;
     margin-top: 50px;
 }
 
+footer .container {
+    background-color: transparent;
+    color: inherit;
+}
+
 footer a {
-    color: var(--color-footer-text);
+    color: #ffffff;
     margin: 0 10px;
     font-size: 1.5em;
+    transition: color 0.3s ease;
 }
 
 footer p {
@@ -180,7 +209,7 @@ a {
 }
 
 a:hover {
-    color: #007bff; 
+    color: #007bff;
     text-decoration: underline;
 }
 
@@ -256,7 +285,7 @@ body.dark-mode .text-container p {
 }
 
 body.dark-mode .section {
-    background-color: rgb(44, 44, 44);
+    background-color: var(--color-bg);
     border-radius: 8px;
     padding: 20px;
 }
@@ -274,3 +303,22 @@ body.dark-mode a:hover {
     color: #007bff;
 }
 
+.stack-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stack-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.stack-logo:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+}
