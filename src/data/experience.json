@@ -1,0 +1,63 @@
+[
+    {
+        "company": "CaixaBank Tech",
+        "logo": "/img/cabktech_logo.jpg",
+        "role": "Software Engineer",
+        "period": "marzo 2025 - actualidad",
+        "location": "Sevilla, España",
+        "description": [
+            "Desarrollo de soluciones Full Stack para proyectos internos y externos del banco.",
+            "Trabajo con tecnologías como Java, Spring Boot y React."
+        ],
+        "techs": [
+            {
+                "src": "/img/java-logo.png",
+                "alt": "Java"
+            },
+            {
+                "src": "/img/springboot_logo.png",
+                "alt": "Spring Boot"
+            },
+            {
+                "src": "/img/js-logo.png",
+                "alt": "JavaScript"
+            },
+            {
+                "src": "/img/react_logo.webp",
+                "alt": "React"
+            }
+        ]
+    },
+    {
+        "company": "GUADALTEL, S.A.",
+        "logo": "/img/guadaltel_logo.jpg",
+        "role": "Software Developer",
+        "period": "marzo 2023 - marzo 2025",
+        "location": "Sevilla, España",
+        "description": [
+            "Desarrollo de servicios REST y microservicios para universidades utilizando JAVA.",
+            "Desarrollo de CAPA-InterAE, una API REST de interoperabilidad para universidades.",
+            "Desarrollo completo de Interoperability-Trace, aplicación web con SPRING BOOT y REACT.",
+            "Implementación de formularios, integración de expedientes, integración con la API de Trew@.",
+            "Tecnologías adicionales: TypeScript, Maven, Jenkins, SQL Oracle, JAX-RS, SOAP, arquitectura REST, entre otras."
+        ],
+        "techs": [
+            {
+                "src": "/img/java-logo.png",
+                "alt": "Java"
+            },
+            {
+                "src": "/img/springboot_logo.png",
+                "alt": "Spring Boot"
+            },
+            {
+                "src": "/img/js-logo.png",
+                "alt": "JavaScript"
+            },
+            {
+                "src": "/img/react_logo.webp",
+                "alt": "React"
+            }
+        ]
+    }
+]

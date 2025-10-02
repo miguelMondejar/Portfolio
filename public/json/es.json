@@ -1,0 +1,19 @@
+{
+    "greeting": "¡Hola!",
+    "name": "Soy Miguel",
+    "developer": "Desarrollador de Software",
+    "me-text": "Sobre mí",
+    "downloadCV": "Descarga mi CV",
+    "study-text": "Educación",
+    "experience-text": "Experiencia",
+    "contactText": "Contacto",
+    "aboutMeParagraph1": "Desde pequeño me apasiona el mundo de la informática. Me encanta desarrollo de software, poseo habilidades tanto en Frontend como en Backend; mi aspiración es convertirme en Desarrollador Full Stack en el futuro.",
+    "aboutMeParagraph2": "Me describo como una persona creativa, responsable y con una actitud positiva. Tengo la capacidad de adaptarme a diversas situaciones, resolver problemas y aprecio el trabajo en equipo.",
+    "contactParagraph1": "¿Te has quedado con ganas de más? ¿Quieres consultarme algo? ❓",
+    "contactParagraph2": "Puedes contactar conmigo por correo electrónico",
+    "contactParagraph3": "También puedes contactar conmigo por mis RRSS, enlances abajo en el footer ;)",
+    "linkedin": "Conecta conmigo en LinkedIn",
+    "linkedinDescription": "Conéctate conmigo y descubre más sobre mi carrera profesional.",
+    "github": "Visita mi GitHub",
+    "githubDescription": "Visita algunos de mis proyectos."
+}
