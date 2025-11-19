@@ -1,4 +1,4 @@
-# 🎨 Portfolio - Miguel Mondéjar
+# 🎨 Portfolio profesional - Miguel Mondéjar González
 
 Portfolio profesional interactivo construido con **React**, **Vite** y **Tailwind CSS**.
 
@@ -193,11 +193,6 @@ Si encuentras bugs o tienes sugerencias, siéntete libre de abrir un issue o pul
 ---
 
 ⭐ Si te gusta este proyecto, ¡considera darle una estrella en GitHub!
-- **Sección del vehículo**, mostrando su equipamiento.  
-- **Contacto directo** vía teléfono, WhatsApp o redes sociales.  
-- **Métodos de pago**: efectivo, tarjeta y Bizum.  
-- **Diseño responsive y accesible** para móviles, tablets y ordenadores.  
-- **Desarrollado con React + Tailwind CSS** para máxima velocidad y mantenibilidad.
 
 ## Tecnologías utilizadas
 
@@ -210,5 +205,5 @@ Si encuentras bugs o tienes sugerencias, siéntete libre de abrir un issue o pul
 
 ## Licencia
 
-Este proyecto es propiedad de Mondéjar Taxi S.L.
+Este proyecto es propiedad de Miguel Mondéjar González.
 El código puede ser reutilizado con fines educativos o personales, pero no para uso comercial sin permiso.
