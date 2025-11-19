@@ -5,6 +5,7 @@
     "me-text": "Sobre mí",
     "downloadCV": "Descarga mi CV",
     "study-text": "Educación",
+    "certifications-text": "Certificaciones",
     "experience-text": "Experiencia",
     "contactText": "Contacto",
     "aboutMeParagraph1": "Desde pequeño me apasiona el mundo de la informática. Me encanta desarrollo de software, poseo habilidades tanto en Frontend como en Backend; mi aspiración es convertirme en Desarrollador Full Stack en el futuro.",
@@ -15,5 +16,7 @@
     "linkedin": "Conecta conmigo en LinkedIn",
     "linkedinDescription": "Conéctate conmigo y descubre más sobre mi carrera profesional.",
     "github": "Visita mi GitHub",
-    "githubDescription": "Visita algunos de mis proyectos."
+    "githubDescription": "Visita algunos de mis proyectos.",
+    "ageText": "Tengo {{age}} años",
+    "experienceText": "Cuento con {{years}} de experiencia"
 }

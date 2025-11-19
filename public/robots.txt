@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.pdf$
+
+# Sitemap
+Sitemap: https://miguelmondejar.dev/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
