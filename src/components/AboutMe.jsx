@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
-import { TECH_STACK, TITLE, calculateAge, calculateExperience, getYearsText } from "../data/constants";
+import { TECH_STACK, TITLE, calculateAge, calculateExperience, getYearsText } from "../utils/constants";
 import { useTranslation } from "../hooks/useLanguage";
 
 export default function AboutMe() {

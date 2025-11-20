@@ -1,6 +1,6 @@
 import { FaUser, FaBriefcase, FaGraduationCap, FaEnvelope, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import { MENU_ITEMS } from "../data/constants";
+import { MENU_ITEMS } from "../utils/constants";
 import { useLanguage } from "../hooks/useLanguage";
 import ReactCountryFlag from "react-country-flag";
 

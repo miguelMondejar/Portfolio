@@ -6,6 +6,7 @@ Portfolio profesional interactivo construido con **React**, **Vite** y **Tailwin
 
 - ✨ **Diseño Responsivo**: Adaptado para móvil, tablet y desktop
 - 🌓 **Modo Oscuro**: Toggle persistente con `localStorage`
+- 📚 **Multidioma**: Disponible en español e inglés.
 - 📱 **Navegación con React Router**: URLs dinámicas y compartibles
 - ♿ **Accesibilidad**: Cumple con WCAG, aria-labels y semántica HTML
 - ⚡ **Performance**: Lazy loading de imágenes, optimización de assets
@@ -24,10 +25,8 @@ src/
 │   ├── Contact.jsx       # Formulario de contacto y redes sociales
 │   ├── Navbar.jsx        # Navegación con React Router
 │   └── Footer.jsx        # Pie de página con links y scroll to top
-├── data/
+├── utils/
 │   ├── constants.js      # Configuración centralizada
-│   ├── experience.json   # Datos de experiencia profesional
-│   └── education.json    # Datos de educación
 ├── App.jsx               # Router y gestión de modo oscuro
 ├── App.css               # Estilos globales
 ├── index.css             # Tailwind y animaciones

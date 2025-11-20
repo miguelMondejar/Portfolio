@@ -1,6 +1,6 @@
 import React from "react";
 import { FaEnvelope } from "react-icons/fa";
-import { EMAIL, EMAIL_LINK, SOCIAL_CONFIG } from "../data/constants";
+import { EMAIL, EMAIL_LINK, SOCIAL_CONFIG } from "../utils/constants";
 import { useTranslation } from "../hooks/useLanguage";
 
 export default function Contact() {

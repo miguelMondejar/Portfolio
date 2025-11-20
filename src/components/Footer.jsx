@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
-import { FULL_NAME, TITLE, SOCIAL_CONFIG, EMAIL_LINK } from "../data/constants";
+import { FULL_NAME, TITLE, SOCIAL_CONFIG, EMAIL_LINK } from "../utils/constants";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "../hooks/useLanguage";
 
