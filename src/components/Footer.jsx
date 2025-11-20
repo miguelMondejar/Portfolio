@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Sección links rápidos */}
           <div className="text-center">
-            <h3 className="font-semibold mb-3 text-gray-300">Enlaces Rápidos</h3>
+            <h3 className="font-semibold mb-3 text-gray-300">{t("linkText")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="/" className="text-gray-400 hover:text-white transition-colors">
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Sección redes sociales */}
           <div className="text-center md:text-right">
-            <h3 className="font-semibold mb-3 text-gray-300">Redes Sociales</h3>
+            <h3 className="font-semibold mb-3 text-gray-300">{t("rrssText")}</h3>
             <div className="flex justify-center md:justify-end gap-4">
               {SOCIAL_CONFIG.map((social) => (
                 <a
@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Línea separadora */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">
-            &copy; {year} {FULL_NAME}. Todos los derechos reservados.
+            &copy; {year} {FULL_NAME}. {t("rightsReserved")}
           </p>
 
           {/* Botón scroll to top */}

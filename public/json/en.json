@@ -8,15 +8,152 @@
   "certifications-text": "Certifications",
   "experience-text": "Experience",
   "contactText": "Contact",
-  "aboutMeParagraph1": "Since I was a child, I've been passionate about computer science and enjoy web development and programming. I have skills in both Frontend and Backend, and my goal is to become a Full Stack Developer.",
-  "aboutMeParagraph2": "I consider myself a creative and responsible person with a positive attitude. I can adapt to different situations, solve problems, and value teamwork.",
+  "rrssText": "Social Networks",
+  "linkText": "Links",
+  "licensesText": "Driving Licenses and Certifications",
+  "rightsReserved": "All rights reserved.",
+  "aboutMeParagraph1": "Since I was a child, I've been passionate about computer science. I enjoy software development and I have skills in both Frontend and Backend; my goal is to become a Full Stack Developer in the future.",
+  "aboutMeParagraph2": "I consider myself a creative and responsible person with a positive attitude. I can adapt to different situations, solve problems, and I value teamwork.",
   "contactParagraph1": "Would you like more information? Do you have any questions for me? ❓",
   "contactParagraph2": "You can reach me via email",
-  "contactParagraph3": "You can also connect with me through my social media channels; links are in the footer below 😉",
+  "contactParagraph3": "You can also contact me through my social media; links are available below in the footer 😉",
   "linkedin": "Connect with me on LinkedIn",
-  "linkedinDescription": "Connect with me and discover more about my professional career.",
+  "linkedinDescription": "Connect with me and learn more about my professional career.",
   "github": "Visit my GitHub",
   "githubDescription": "Check out some of my projects.",
   "ageText": "I am {{age}} years old",
-  "experienceText": "I have {{years}} of experience"
+  "experienceText": "I have {{years}} years of experience",
+  "experience": [
+    {
+      "company": "CaixaBank Tech",
+      "logo": "/img/cabktech_logo.jpg",
+      "role": "Software Engineer",
+      "period": "March 2025 – Present",
+      "location": "Seville, Spain (Hybrid)",
+      "description": [
+        "Development of Full Stack solutions for internal and external banking projects.",
+        "Working with technologies such as Java, Spring Boot, and React."
+      ],
+      "techs": [
+        {
+          "src": "/img/java-logo.png",
+          "alt": "Java"
+        },
+        {
+          "src": "/img/springboot_logo.png",
+          "alt": "Spring Boot"
+        },
+        {
+          "src": "/img/js-logo.png",
+          "alt": "JavaScript"
+        },
+        {
+          "src": "/img/react_logo.webp",
+          "alt": "React"
+        }
+      ]
+    },
+    {
+      "company": "GUADALTEL, S.A.",
+      "logo": "/img/guadaltel_logo.jpg",
+      "role": "Software Developer",
+      "period": "March 2023 – March 2025",
+      "location": "Seville, Spain (Hybrid)",
+      "description": [
+        "Development of REST services and microservices for universities using Java.",
+        "Development of CAPA-InterAE, a REST interoperability API for universities.",
+        "Complete development of Interoperability-Trace, a web application built with Spring Boot and React.",
+        "Implementation of forms, academic record integrations, and integration with the Trew@ API.",
+        "Additional technologies: TypeScript, Maven, Jenkins, Oracle SQL, JAX-RS, SOAP, REST architecture, among others."
+      ],
+      "techs": [
+        {
+          "src": "/img/java-logo.png",
+          "alt": "Java"
+        },
+        {
+          "src": "/img/springboot_logo.png",
+          "alt": "Spring Boot"
+        },
+        {
+          "src": "/img/js-logo.png",
+          "alt": "JavaScript"
+        },
+        {
+          "src": "/img/react_logo.webp",
+          "alt": "React"
+        }
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "icon": "FaLaptopCode",
+      "title": "Higher Technician in Web Application Development",
+      "subtitle": "IES Velázquez · September 2021 – June 2023"
+    },
+    {
+      "icon": "FaNetworkWired",
+      "title": "Intermediate Technician in Microcomputer Systems and Networks",
+      "subtitle": "IES Martínez Montañés · September 2018 – June 2020"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "React Testing Library and Jest: The Complete Guide · Udemy",
+      "url": "https://www.udemy.com/certificate/UC-b0786c3a-6299-4dcb-b740-141e64add24e"
+    },
+    {
+      "title": "Advanced JavaScript · OpenWebinars",
+      "url": "https://openwebinars.net/cert/OgMe"
+    },
+    {
+      "title": "Java 8 for Programmers · OpenWebinars",
+      "url": "https://openwebinars.net/cert/jS8d"
+    },
+    {
+      "title": "Clean Code · OpenWebinars",
+      "url": "https://openwebinars.net/cert/ISLz"
+    },
+    {
+      "title": "Web Development with Java EE/Jakarta EE · OpenWebinars",
+      "url": "https://openwebinars.net/cert/78EF"
+    },
+    {
+      "title": "Git · OpenWebinars",
+      "url": "https://openwebinars.net/cert/Perc"
+    },
+    {
+      "title": "Hibernate and JPA · OpenWebinars",
+      "url": "https://openwebinars.net/cert/hTx5"
+    },
+    {
+      "title": "Intermediate JavaScript · OpenWebinars",
+      "url": "https://openwebinars.net/cert/0kxK"
+    },
+    {
+      "title": "Java Projects with Apache Maven · OpenWebinars",
+      "url": "https://openwebinars.net/cert/2ml6"
+    },
+    {
+      "title": "Java Testing with JUnit 5 · OpenWebinars",
+      "url": "https://openwebinars.net/cert/xLUW"
+    },
+    {
+      "title": "Developing a REST API with Spring Boot · OpenWebinars",
+      "url": "https://openwebinars.net/cert/nDr6"
+    },
+    {
+      "title": "Secure Development · OpenWebinars",
+      "url": "https://openwebinars.net/cert/dEE2"
+    }
+  ],
+  "licenses": [
+    {
+      "icon": "FaCar",
+      "title": "Driving License B",
+      "detail": "Has Own Car",
+      "hasOwnCar": true
+    }
+  ]
 }

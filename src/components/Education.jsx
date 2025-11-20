@@ -1,10 +1,12 @@
 import React from "react";
-import educationData from "../data/education.json";
 import { FaLaptopCode, FaNetworkWired, FaCertificate, FaCar } from "react-icons/fa";
 import { useTranslation } from "../hooks/useLanguage";
 
 export default function Education() {
     const { t } = useTranslation();
+    const educacionList = Array.isArray(t("educations")) ? t("educations") : [];
+    const certificationsList = Array.isArray(t("certifications")) ? t("certifications") : [];
+    const licensesList = Array.isArray(t("licenses")) ? t("licenses") : [];
 
     // Mapa de iconos
     const iconMap = {
@@ -13,8 +15,6 @@ export default function Education() {
         FaCertificate: <FaCertificate />,
         FaCar: <FaCar />
     };
-
-    const { educations, certifications, licenses } = educationData;
 
     const EducationCard = ({ icon, title, subtitle, color = "blue" }) => (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -38,7 +38,7 @@ export default function Education() {
                     </h1>
                 </div>
                 <div className="space-y-4">
-                    {educations.map((edu, i) => (
+                    {educacionList.map((edu, i) => (
                         <EducationCard
                             key={i}
                             icon={iconMap[edu.icon]}
@@ -58,7 +58,7 @@ export default function Education() {
                     </h1>
                 </div>
                 <div className="space-y-4">
-                    {certifications.map((cert, i) => (
+                    {certificationsList.map((cert, i) => (
                         <div
                             key={i}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
@@ -86,9 +86,13 @@ export default function Education() {
 
             {/* Carnets / Licencias */}
             <div>
-                <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white mt-8">Carnets y Licencias</h1>
+                <div className="text-center mb-12">
+                    <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+                        {t("licensesText")}
+                    </h1>
+                </div>
                 <div className="space-y-4">
-                    {licenses.map((lic, i) => (
+                    {licensesList.map((lic, i) => (
                         <div
                             key={i}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
@@ -104,7 +108,7 @@ export default function Education() {
                                 {/* Indicación de coche propio */}
                                 {lic.hasOwnCar && (
                                     <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold bg-blue-600 dark:bg-blue-700 text-white rounded-full">
-                                        Coche propio
+                                        {lic.detail}
                                     </span>
                                 )}
                             </div>

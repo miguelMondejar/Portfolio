@@ -16,13 +16,6 @@ export const SOCIAL_LINKS = {
   email: "mailto:miguebyte01@gmail.com",
 };
 
-// About Me
-export const ABOUT_DESCRIPTION = [
-  "Me llamo Miguel, tengo {age} años y {experienceYears} {yearsText} de experiencia en el desarrollo de software.",
-  "Desde pequeño me apasiona el mundo de la informática. Me encanta el desarrollo de software, tanto Frontend como Backend; mi aspiración es ser Full Stack.",
-  "Me considero creativo, responsable y positivo, capaz de adaptarme a diversas situaciones, resolver problemas y trabajar en equipo.",
-];
-
 // Navigation Menu
 export const MENU_ITEMS = [
   { id: "about", label: "Sobre mí" },

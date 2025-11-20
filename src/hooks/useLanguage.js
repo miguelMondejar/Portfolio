@@ -13,16 +13,19 @@ export const useTranslation = () => {
   const { translations, language } = useLanguage();
 
   const t = (key, params = {}) => {
-    let text = translations[key] || key;
+    let value = translations[key] ?? key;
+
+    if (typeof value !== "string") {
+      return value;
+    }
 
     Object.keys(params).forEach((param) => {
       const regex = new RegExp(`{{\\s*${param}\\s*}}`, "g");
-      text = text.replace(regex, params[param]);
+      value = value.replace(regex, params[param]);
     });
 
-    return text;
+    return value;
   };
 
   return { t, language };
 };
-

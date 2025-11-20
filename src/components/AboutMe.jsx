@@ -7,7 +7,6 @@ export default function AboutMe() {
     const { t } = useTranslation();
     const age = calculateAge();
     const experienceYears = calculateExperience();
-    const yearsText = `${experienceYears} ${getYearsText(experienceYears)}`;
 
     return (
         <section
@@ -52,7 +51,7 @@ export default function AboutMe() {
             {/* Descripción */}
             <div className="space-y-6 md:max-w-3xl mx-auto text-center md:text-left bg-gray-800 dark:bg-gray-900 rounded-3xl p-8 shadow-xl">
                 <p className="text-gray-100 leading-relaxed animate-fadeIn">
-                    {t("ageText", { age })} — {t("experienceText", { years: yearsText })}
+                    {t("ageText", { age })} — {t("experienceText", { years: experienceYears })}
                 </p>
                 <p className="text-gray-100 leading-relaxed animate-fadeIn">
                     {t("aboutMeParagraph1")}

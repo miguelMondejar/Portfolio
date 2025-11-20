@@ -1,9 +1,9 @@
 import React from "react";
-import experiences from "../data/experience.json";
 import { useTranslation } from "../hooks/useLanguage";
 
 export default function Experience() {
   const { t } = useTranslation();
+  const experienceList = Array.isArray(t("experience")) ? t("experience") : [];
 
   return (
     <section className="container mx-auto p-6 space-y-8">
@@ -14,7 +14,7 @@ export default function Experience() {
       </div>
 
       <div className="space-y-6">
-        {experiences.map((exp, i) => (
+        {experienceList.map((exp, i) => (
           <article
             key={i}
             className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col md:flex-row gap-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"

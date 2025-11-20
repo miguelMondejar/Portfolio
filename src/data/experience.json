@@ -4,7 +4,7 @@
         "logo": "/img/cabktech_logo.jpg",
         "role": "Software Engineer",
         "period": "marzo 2025 - actualidad",
-        "location": "Sevilla, España",
+        "location": "Sevilla, España (Hibrido)",
         "description": [
             "Desarrollo de soluciones Full Stack para proyectos internos y externos del banco.",
             "Trabajo con tecnologías como Java, Spring Boot y React."
@@ -33,7 +33,7 @@
         "logo": "/img/guadaltel_logo.jpg",
         "role": "Software Developer",
         "period": "marzo 2023 - marzo 2025",
-        "location": "Sevilla, España",
+        "location": "Sevilla, España (Hibrido)",
         "description": [
             "Desarrollo de servicios REST y microservicios para universidades utilizando JAVA.",
             "Desarrollo de CAPA-InterAE, una API REST de interoperabilidad para universidades.",
