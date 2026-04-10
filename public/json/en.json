@@ -7,11 +7,14 @@
   "study-text": "Education",
   "certifications-text": "Certifications",
   "experience-text": "Experience",
+  "projects-text": "Projects",
   "contactText": "Contact",
   "rrssText": "Social Networks",
   "linkText": "Links",
   "licensesText": "Driving Licenses and Certifications",
   "rightsReserved": "All rights reserved.",
+  "backToTop": "Back to Top",
+  "loading": "Loading...",
   "aboutMeParagraph1": "Since I was a child, I've been passionate about computer science. I enjoy software development and I have skills in both Frontend and Backend; my goal is to become a Full Stack Developer in the future.",
   "aboutMeParagraph2": "I consider myself a creative and responsible person with a positive attitude. I can adapt to different situations, solve problems, and I value teamwork.",
   "contactParagraph1": "Would you like more information? Do you have any questions for me? ❓",
@@ -26,7 +29,7 @@
   "experience": [
     {
       "company": "CaixaBank Tech",
-      "logo": "/img/cabktech_logo.jpg",
+      "logo": "/img/cabktech_logo.webp",
       "role": "Software Engineer",
       "period": "March 2025 – Present",
       "location": "Seville, Spain (Hybrid)",
@@ -55,7 +58,7 @@
     },
     {
       "company": "GUADALTEL, S.A.",
-      "logo": "/img/guadaltel_logo.jpg",
+      "logo": "/img/guadaltel_logo.webp",
       "role": "Software Developer",
       "period": "March 2023 – March 2025",
       "location": "Seville, Spain (Hybrid)",
@@ -86,10 +89,29 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "Mondéjar Taxi SL",
+      "url": "https://mondejartaxisl.com",
+      "description": "Official website of Mondéjar Taxi S.L., the trusted taxi service in Socuéllamos (Ciudad Real). Designed to provide customers with all the necessary information about rates, contact, services and payment methods, with a modern, responsive and optimized design.",
+      "image": "/img/mondejartaxi_logo.webp",
+      "techs": [
+        {
+          "src": "/img/react_logo.webp",
+          "alt": "React"
+        },
+        {
+            "src": "/img/js-logo.png",
+            "alt": "JavaScript"
+        }
+        
+      ]
+    }
+  ],
   "educations": [
     {
       "icon": "FaLaptopCode",
-      "title": "(Web/Multimedia Management and Webmaster",
+      "title": "Web/Multimedia Management and Webmaster",
       "subtitle": "IES Velázquez · September 2021 – June 2023"
     },
     {
