@@ -1,4 +1,4 @@
-import { FaUser, FaBriefcase, FaGraduationCap, FaEnvelope, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
+import { FaUser, FaBriefcase, FaFolderOpen, FaGraduationCap, FaEnvelope, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { MENU_ITEMS } from "../utils/constants";
 import { useLanguage } from "../hooks/useLanguage";
@@ -13,6 +13,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
     "/": "about",
     "/about": "about",
     "/experience": "experience",
+    "/projects": "projects",
     "/education": "education",
     "/contact": "contact",
   };
@@ -22,6 +23,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
   const iconMap = {
     about: <FaUser size={20} />,
     experience: <FaBriefcase size={20} />,
+    projects: <FaFolderOpen size={20} />,
     education: <FaGraduationCap size={20} />,
     contact: <FaEnvelope size={20} />,
   };
@@ -29,6 +31,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
   const routeMap = {
     about: "/",
     experience: "/experience",
+    projects: "/projects",
     education: "/education",
     contact: "/contact",
   };

@@ -20,6 +20,7 @@ export const SOCIAL_LINKS = {
 export const MENU_ITEMS = [
   { id: "about", label: "Sobre mí" },
   { id: "experience", label: "Experiencia" },
+  { id: "projects", label: "Proyectos" },
   { id: "education", label: "Educación" },
   { id: "contact", label: "Contacto" },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLaptopCode, FaNetworkWired, FaCertificate, FaCar } from "react-icons/fa";
 import { useTranslation } from "../hooks/useLanguage";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Education() {
     const { t } = useTranslation();
@@ -8,7 +9,13 @@ export default function Education() {
     const certificationsList = Array.isArray(t("certifications")) ? t("certifications") : [];
     const licensesList = Array.isArray(t("licenses")) ? t("licenses") : [];
 
-    // Mapa de iconos
+    useSEO({
+        title: "Educación",
+        description: "Mi formación académica y certificaciones profesionales. Grado Superior en DAW, múltiples certificaciones en tecnologías web y desarrollo de software.",
+        url: "https://miguelmondejar.dev/education",
+        imageUrl: "https://miguelmondejar.dev/img/miguel_index.jpg"
+    });
+
     const iconMap = {
         FaLaptopCode: <FaLaptopCode />,
         FaNetworkWired: <FaNetworkWired />,
@@ -16,9 +23,15 @@ export default function Education() {
         FaCar: <FaCar />
     };
 
-    const EducationCard = ({ icon, title, subtitle, color = "blue" }) => (
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className={`flex items-center justify-center w-16 h-16 rounded-full bg-${color}-600 dark:bg-${color}-700 text-white text-2xl flex-shrink-0`}>
+    const colorMap = {
+        blue: "bg-blue-600 dark:bg-blue-700",
+        yellow: "bg-yellow-500 dark:bg-yellow-600",
+        green: "bg-green-600 dark:bg-green-700"
+    };
+
+    const EducationCard = ({ icon, title, subtitle, color = "blue", delay = 0 }) => (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay={delay}>
+            <div className={`flex items-center justify-center w-16 h-16 rounded-full ${colorMap[color]} text-white text-2xl flex-shrink-0`}>
                 {icon}
             </div>
             <div className="flex-1">
@@ -32,7 +45,7 @@ export default function Education() {
         <div className="container mx-auto p-4 space-y-8">
             {/* Educación */}
             <div>
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="fade-down">
                     <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
                         {t("study-text")}
                     </h1>
@@ -45,6 +58,7 @@ export default function Education() {
                             title={edu.title}
                             subtitle={edu.subtitle}
                             color="blue"
+                            delay={i * 100}
                         />
                     ))}
                 </div>
@@ -52,7 +66,7 @@ export default function Education() {
 
             {/* Certificaciones */}
             <div>
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="fade-down">
                     <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
                         {t("certifications-text")}
                     </h1>
@@ -62,6 +76,8 @@ export default function Education() {
                         <div
                             key={i}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
                         >
                             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-yellow-500 dark:bg-yellow-600 text-white text-2xl flex-shrink-0">
                                 <FaCertificate />
@@ -86,7 +102,7 @@ export default function Education() {
 
             {/* Carnets / Licencias */}
             <div>
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="fade-down">
                     <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
                         {t("licensesText")}
                     </h1>
@@ -96,6 +112,8 @@ export default function Education() {
                         <div
                             key={i}
                             className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex gap-4 items-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
                         >
                             {/* Icono */}
                             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-600 dark:bg-green-700 text-white text-2xl flex-shrink-0">

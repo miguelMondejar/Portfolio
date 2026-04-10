@@ -2,19 +2,28 @@ import React from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { EMAIL, EMAIL_LINK, SOCIAL_CONFIG } from "../utils/constants";
 import { useTranslation } from "../hooks/useLanguage";
+import { useSEO } from "../hooks/useSEO";
+import SocialIcon from "./common/SocialIcon";
 
 export default function Contact() {
   const { t } = useTranslation();
 
+  useSEO({
+    title: "Contacto",
+    description: "Ponte en contacto conmigo a través de email o redes sociales. Disponible para proyectos, consultoría y colaboraciones profesionales.",
+    url: "https://miguelmondejar.dev/contact",
+    imageUrl: "https://miguelmondejar.dev/img/miguel_index.jpg"
+  });
+
   return (
     <section id="contact" className="container mx-auto py-12 px-4 space-y-8">
       {/* Card principal */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12" data-aos="fade-down">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
           {t("contactText")}
         </h1>
       </div>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
         <p className="text-gray-700 dark:text-gray-300 mb-4">
           {t("contactParagraph1")}
         </p>
@@ -34,7 +43,7 @@ export default function Contact() {
 
       {/* Enlaces a redes sociales */}
       <div className="flex flex-col md:flex-row gap-6 justify-center">
-        {SOCIAL_CONFIG.map((social) => (
+        {SOCIAL_CONFIG.map((social, i) => (
           <a
             key={social.id}
             href={social.url}
@@ -42,6 +51,8 @@ export default function Contact() {
             rel="noopener noreferrer"
             className={`flex items-center gap-4 ${social.bgColor} ${social.hoverColor} ${social.darkBgColor} ${social.darkHoverColor} text-white rounded-lg shadow-lg p-4 transition-colors duration-300`}
             aria-label={`${t("contactParagraph3")} - ${social.label}`}
+            data-aos="zoom-in"
+            data-aos-delay={i * 100}
           >
             <span className="flex items-center justify-center w-12 h-12 bg-white text-gray-800 rounded-full text-2xl flex-shrink-0">
               {social.id === "linkedin" ? (

@@ -2,11 +2,19 @@ import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { TECH_STACK, TITLE, calculateAge, calculateExperience, getYearsText } from "../utils/constants";
 import { useTranslation } from "../hooks/useLanguage";
+import { useSEO } from "../hooks/useSEO";
 
 export default function AboutMe() {
     const { t } = useTranslation();
     const age = calculateAge();
     const experienceYears = calculateExperience();
+
+    useSEO({
+        title: "Sobre Mí",
+        description: "Desarrollador Full Stack con experiencia en Java, Spring Boot, React y JavaScript. Especialista en desarrollo de aplicaciones web modernas y escalables.",
+        url: "https://miguelmondejar.dev/about",
+        imageUrl: "https://miguelmondejar.dev/img/miguel_index.jpg"
+    });
 
     return (
         <section
@@ -15,7 +23,7 @@ export default function AboutMe() {
         >
             <div className="flex flex-col md:flex-row items-center gap-12">
                 {/* Texto */}
-                <div className="md:w-1/2 text-center md:text-left space-y-4">
+                <div className="md:w-1/2 text-center md:text-left space-y-4" data-aos="fade-right">
                     <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white animate-fadeIn">
                         {t("greeting")} <strong>{t("name")}</strong>
                     </h1>
@@ -25,7 +33,7 @@ export default function AboutMe() {
                 </div>
 
                 {/* Imagen + logos tecnologías */}
-                <div className="md:w-1/2 text-center space-y-4">
+                <div className="md:w-1/2 text-center space-y-4" data-aos="fade-left">
                     <div className="relative inline-block animate-fadeIn">
                         <img
                             src="/img/miguel_index.jpg"
@@ -40,6 +48,8 @@ export default function AboutMe() {
                                 key={tech.alt}
                                 className="w-14 h-14 flex items-center justify-center rounded-full bg-white dark:bg-gray-700 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                                 title={tech.alt}
+                                data-aos="zoom-in"
+                                data-aos-delay="100"
                             >
                                 <img src={tech.src} alt={tech.alt} className="w-7 h-7" loading="lazy" />
                             </div>
