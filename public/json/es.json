@@ -34,7 +34,13 @@
             "period": "marzo 2025 - actualidad",
             "location": "Sevilla, España (Hibrido)",
             "description": [
-                "Desarrollo de soluciones Full Stack para proyectos internos y externos del banco.",
+                "Participación en dos proyectos de core banking en el ámbito fintech.",
+                "Desarrollo del flujo de onboarding de clientes en CaixaBank, abarcando la verificación de identidad digital y el alta de cuentas.",
+                "Desarrollador en el proyecto \"Gestión y Conciliación de Cobros y Pagos\", garantizando la integridad transaccional.",
+                "Diseño y desarrollo de microservicios y APIs REST siguiendo buenas prácticas.",
+                "Uso de Kafka para la comunicación asíncrona y orientada a eventos entre servicios.",
+                "Contenerización y despliegue de servicios mediante Podman.",
+                "Gestión de bases de datos con Oracle.",
                 "Trabajo con tecnologías como Java, Spring Boot y React."
             ],
             "techs": [

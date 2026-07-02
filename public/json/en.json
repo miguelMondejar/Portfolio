@@ -34,7 +34,13 @@
       "period": "March 2025 – Present",
       "location": "Seville, Spain (Hybrid)",
       "description": [
-        "Development of Full Stack solutions for internal and external banking projects.",
+        "Participation in two core banking projects in the fintech domain.",
+        "Development of the customer onboarding flow for CaixaBank, covering digital identity verification and account registration.",
+        "Developer on the \"Payment and Collection Management and Reconciliation\" project, ensuring transactional integrity.",
+        "Design and development of microservices and REST APIs following best practices.",
+        "Use of Kafka for asynchronous event-driven communication between services.",
+        "Containerization and deployment of services using Podman.",
+        "Database management with Oracle.",
         "Working with technologies such as Java, Spring Boot, and React."
       ],
       "techs": [

@@ -37,7 +37,8 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
   };
 
   return (
-    <nav className="bg-gray-900 text-white shadow-md p-3 flex justify-center items-center gap-3 sticky top-0 z-50 flex-wrap">
+    <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50 overflow-x-auto">
+      <div className="flex justify-start md:justify-center items-center gap-2 md:gap-3 px-3 py-3 min-w-max md:min-w-0 mx-auto">
       {/* Links de navegación */}
       {MENU_ITEMS.map((item) => (
         <Link
@@ -94,6 +95,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           />
         </div>
       </button>
+      </div>
     </nav>
   );
 }
